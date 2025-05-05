@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - NCNTAIA-2025</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#222; }
+
+    /* HEADER */
+    header {
+      background:#8B0000; color:#fff;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 20px; flex-wrap:wrap;
+    }
+    .logo-container { display:flex; gap:15px; align-items:center; }
+    .logo-container img { height:50px; background:#fff; padding:5px; border-radius:5px; }
+
+    nav { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+    nav a {
+      color:#fff; text-decoration:none; padding:6px 12px;
+      background:#333; border-radius:4px; font-weight:bold;
+    }
+    nav a:hover { background:#aa0000; }
+    nav a[href="index.html"] { background:#aa0000; }
+
+    /* HERO SECTION */
+    .hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+}
+
+
+    .hero-overlay {
+      background: url('assets/image.png') center center no-repeat;
+      background-size: cover;
+      padding: 40px 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .hero-overlay::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(50, 50, 50, 0.6);
+      border-radius: 12px;
+      z-index: 1;
+    }
+
+    .hero-overlay * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-overlay h1 { margin-bottom: 10px; }
+    .hero-overlay p { margin-bottom: 8px; }
+
+    .btn-light {
+      font-weight: bold;
+      background-color: #fff;
+      color: #8B0000;
+      border: none;
+    }
+
+    .btn-light:hover {
+      background-color: #8B0000;
+      color: #fff;
+    }
+
+    /* STATS */
+    .container.text-center.py-5 .text-danger { margin-bottom: .5rem; }
+
+    /* CAROUSEL */
+    #college-events .carousel { max-width:900px; margin:auto; }
+    #college-events .carousel-item img { height:50vh; object-fit:cover; }
+
+    /* FLOATING BUTTON */
+    .floating-btn { position: fixed; bottom:20px; right:20px; z-index:1000; }
+
+    /* FOOTER */
+    footer {
+      background:#2c2c2c; color:#fff; text-align:center;
+      padding:15px; margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <img src="assets/snist.png" alt="SNIST Logo">
+      <img src="assets/ieee.png" alt="IEEE Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cfp.html">Call for Papers</a>
+      <a href="committee.html">Committee</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="dates.html">Important Dates</a>
+      <a href="registration.html">Registration</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-wrapper">
+    <div class="hero-overlay">
+      <h1 class="display-4">Welcome to NCNTAIA-2025</h1>
+      <p class="lead">National Conference on Next Generation Technologies in AI Applications</p>
+      <p><strong>Organized by:</strong> Department of CSE, SNIST, in association with IEEE</p>
+      <p><strong>Date:</strong> September 11–12, 2025 (Hybrid Mode)</p>
+      <a href="registration.html" class="btn btn-light mt-3">Register Now</a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="container text-center py-5">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-danger">50+</h2>
+        <p>Research Papers</p>
+      </div>
+      <div class="col">
+        <h2 class="text-danger">20+</h2>
+        <p>Keynote Speakers</p>
+      </div>
+      <div class="col">
+        <h2 class="text-danger">2</h2>
+        <p>Days of Learning</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="text-center my-4">
+    <h3 class="text-danger">Countdown to NCNTAIA-2025</h3>
+    <div id="countdown" style="font-size:24px; font-weight:bold;"></div>
+  </section>
+
+  <!-- CAROUSEL -->
+  <section id="college-events" class="py-5 bg-light">
+    <h2 class="text-center text-dark fw-bold mb-4">College Events</h2>
+    <div id="collegeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/snist1.png" class="d-block w-100" alt="Event 1">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/snist2.png" class="d-block w-100" alt="Event 2">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/snist3.png" class="d-block w-100" alt="Event 3">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/snist4.png" class="d-block w-100" alt="Event 4">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#collegeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#collegeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- FLOATING BUTTON -->
+  <a href="registration.html" class="btn btn-danger floating-btn">Register Now</a>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const eventDate = new Date("2025-09-11T09:00:00").getTime();
+    setInterval(() => {
+      const now = Date.now();
+      const dist = eventDate - now;
+      const d = Math.floor(dist / (1000*60*60*24));
+      const h = Math.floor((dist % (1000*60*60*24)) / (1000*60*60));
+      const m = Math.floor((dist % (1000*60*60)) / (1000*60));
+      const s = Math.floor((dist % (1000*60)) / 1000);
+      document.getElementById("countdown").innerText =
+        dist > 0 ? `${d}d ${h}h ${m}m ${s}s` : "Event Started";
+    }, 1000);
+  </script>
+  <footer>
+    &copy;  NCNTAIA-2025 | Department of CSE, SNIST | All Rights Reserved<br>
+    Dr. Mamatha talakoti, Convenor |NCNTABC-2025 | Contact: mamatha.t@sreenidhi.edu.in | phone:+91-9912667488
+  </footer>
+
+</body>
+</html>
