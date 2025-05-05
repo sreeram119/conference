@@ -5,17 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About - NCNTAIA-2025</title>
   <style>
-    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#222;}
-    header {background:#8B0000; color:#fff; display:flex; align-items:center; justify-content:space-between; padding:10px 20px; flex-wrap:wrap;}
-    .logo-container {display:flex; gap:15px; align-items:center;}
-    .logo-container img {height:50px; background:#fff; padding:5px; border-radius:5px;}
-    nav {display:flex; gap:10px; flex-wrap:wrap; justify-content:center;}
-    nav a {color:#fff; text-decoration:none; padding:6px 12px; background:#333; border-radius:4px; font-weight:bold;}
-    nav a:hover {background:#aa0000;}
-    section {padding:40px 20px; max-width:800px; margin:auto; line-height:1.6;}
-    h1, h2 {color:#8B0000; margin-bottom:10px;}
-    ul {margin-left:20px;}
-    footer {background:#2c2c2c; color:#fff; text-align:center; padding:15px; margin-top:40px;}
+    * {box-sizing: border-box;}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+    }
+
+    header {
+      background: #8B0000;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .logo-container img {
+      height: 50px;
+      background: #fff;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 6px 12px;
+      background: #333;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #aa0000;
+    }
+
+    nav a.active {
+      background: #aa0000;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #8B0000;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      background: #2c2c2c;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo-container {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+      }
+
+      nav a {
+        flex-shrink: 0;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
+
+      footer {
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -27,7 +131,7 @@
   </div>
   <nav>
     <a href="index.html">Home</a>
-    <a href="about.html" style="background:#aa0000;">About</a>
+    <a href="about.html" class="active">About</a>
     <a href="cfp.html">Call for Papers</a>
     <a href="committee.html">Committee</a>
     <a href="speakers.html">Speakers</a>
@@ -38,66 +142,66 @@
 
 <section>
   <h1>About NCNTAIA-2025</h1>
-  <p>In an age of accelerating digital transformation, Artificial Intelligence (AI), Big Data Analytics, and Smart Computing are reshaping the global landscape across academics, industries, governance, and everyday life. The National Conference on Next-Generation Technologies in AI Applications (NCNTAIA-2025) is an important initiative to facilitate the exchange of cutting-edge research, breakthrough innovations, and impactful practices that define this new technological epoch.</p>
-  <p>This academic and industry-oriented conference seeks to bring together a diverse community of scholars, scientists, developers, educators, entrepreneurs, and policymakers to explore advancements that are fueling next-generation systems. With a strong focus on interdisciplinary collaboration, the event provides a dynamic forum for the presentation of high-quality research results, the demonstration of real-world applications, and the discussion of strategies for responsible and scalable tech integration.</p>
-  <p>Keynote presentations by renowned experts in computing and technologies provide an exceptional opportunity for all registered participants to engage with domain experts, explore groundbreaking ideas, and stay ahead in the evolving world of technology. To recognize excellence in research, Best Paper Awards will be presented to the most impactful and innovative solution-oriented outcomes.</p>
+  <p>In an age of accelerating digital transformation, Artificial Intelligence (AI), Big Data Analytics, and Smart Computing are reshaping the global landscape...</p>
 
- 
-<section>
-    <h1>About SNIST:</h1>
-    <p>SREENIDHI INSTITUTE OF SCIENCE & TECHNOLOGY (SNIST) was established in 1997 with the approval of All India Council for Technical Education, Government of Andhra Pradesh and is affiliated to JNTUH. Sreenidhi transforms its students into technically competent, highly communicative, application oriented and lifelong learning Engineers. Their success in the globally competitive technological world and leadership in their chosen profession, are our objectives.</p>
-<p>• It is running a number of under graduate and post graduate programmes and is also engaged in research activity leading to Ph.D. Sreenidhi is recognized by Department of Scientific and Industrial Research (DSIR) as scientific and Industrial research organization.</p>
-    <p>• The Institution got accredited by NAAC with ‘A’ Grade and Accredited by NBA of AICTE within 5 years of its existence.
+  <p>This academic and industry-oriented conference seeks to bring together a diverse community...</p>
 
-        • It has received World Bank assistance under TEQIP (P I&II). The institution attained autonomous status from 2010 onwards and it is the first college under JNTUH to get such an autonomous status.
-        
-        • SNIST is actively engaged in R&D in the area of Nano – Technology and allied fields.
-        
-        • Received National Award for Best HRD Practices from Indian Society for Training and Development, which is the first of its kind by an educational institution in the Country.
-        
-        • SNIST is rated as number 2 in A.P. State in two consecutive years in 2008 and 2009 by popular magazine Competition Success Review. It is rated as 28th in India heralding into top 1% of Engineering Institutions in India.
-        
-        • Received Best Engineering College in AP State Award by ISTE A.P. Section.
-        
-        • The faculty and students of SNIST are actively involved in R&D activities and the results of such research activity are being published. SNIST has awarded several research projects from different sponsoring agencies. Faculty members also  received best  faculty awards/achievement awards etc.,
-        
-        </p>
+  <p>Keynote presentations by renowned experts in computing and technologies provide an exceptional opportunity...</p>
 </section>
-    <section>
-        <h1>About Computer Science and Engineering Department</h1>
-        <p>Department of CSE in Sreenidhi Institute of Science and Technology was established in 1997 and is one of the prestigious departments that focus overall growth of students including academic and research activities. CSE offers one UG programs, B.Tech CSE with an intake of 300 students. This program has an NBA accreditation. The department also offers one PG program with an intake of 18 students. Recently four new departments were established in CSE allied fields, Artificial Intelligence and Machine Learning, Data Science, Cyber Security and Internet of Things. The department attracts faculty across the country with rich experience in teaching and research that helps in shaping the students. There are 60 faculty members including 15 doctorates who are well experienced and specialized in different domains like AI, ML,BDA and so on. Faculty are actively filing patents and publishing research papers in quality journals. A few faculty members are internationally certified in cloud computing by Amazon cyber security, by paloalto, linux programming by redhat celenium testing by virtusa. The state of art laboratory is equipped with latest hardware and software facilities to carry out academic as well as research work. The department is also having exclusive research laboratory with high end systems. Students are doing research projects with the guidance of faculty. Effective mentoring processes are in place. The department encourages students to explore new technologies by conducting student development programs, guest lectures value added courses and certified programs. The department is also organizing many more activities to groom their career activities like hackathons, poster presentations, project expo, paper publications and many more to make them industry ready. The students actively participate in club activities and sports activities. One of our student namely Mr. Aditya is an international Badminton player. His world rank is 91 and in India 7th rank as per the Badminton Association of India. The department is providing opportunity to students to undergo career enhancement training program. HOD, CSE is advisor to the Career Development Centre and also our faculty are acting as trainers for placement training program. CSE department has clinched new heights by securing 99% of placements in top notch companies with a highest package of 38 lpa and an average package of 7.1 lpa. One of the best practices that the department of CSE engages in is thorough encouragement to MOOCs certification program. We have a dedicated lab for NPTEL and faculty members to guide the students in addition to allotting separate slot for NPTEL in the time table to give students ample opportunities to undergo internship with good stipend amount, so that they get the recognized exposure to industry. Some of our CSE department faculty are recipients of best faculty award and excellence in research awards from highly reputed national and international institutes and organizations. The dedicated efforts put in by our faculty in teaching and learning, active participation by our students in co-curricular and extracurricular activities in addition to excellence academic performance has made CSE one of the prominent branches at SNIST. All this was possible only due to the consistent financial and moral support by the management throughout our journey. This resulted in adding many feathers to Sreenidhi’s cap.
 
-        </p>
-    </section>
-  
+<section>
+  <h1>About SNIST</h1>
+  <p>SREENIDHI INSTITUTE OF SCIENCE & TECHNOLOGY (SNIST), established in 1997 and affiliated to JNTUH, transforms its students into competent, communicative, and application-oriented engineers ready for global challenges.</p>
+  <ul>
+    <li>Accredited by NAAC with 'A' Grade and NBA</li>
+    <li>Received World Bank assistance under TEQIP</li>
+    <li>Active R&D in Nano Technology</li>
+    <li>Recognized by DSIR as a Scientific Research Organization</li>
+    <li>Numerous accolades for HRD practices, best college awards, and faculty research</li>
+  </ul>
+</section>
 
+<section>
+  <h1>About CSE Department</h1>
+  <p>The Department of Computer Science and Engineering (CSE) at SNIST, established in 1997, offers both UG and PG programs with a focus on academic excellence, research, and industry engagement.</p>
+  <ul>
+    <li>Offers B.Tech (CSE) and M.Tech with AI, ML, DS, Cyber Security, and IoT specializations</li>
+    <li>15+ PhD faculty, active in patents and publications</li>
+    <li>Exclusive research labs and NPTEL support</li>
+    <li>Highest placement of ₹38 LPA; average ₹7.1 LPA</li>
+    <li>Students engaged in hackathons, sports, and co-curricular excellence</li>
+  </ul>
+</section>
+
+<section>
   <h2>Objectives of the Conference</h2>
   <ul>
     <li><strong>Promote Research and Innovation:</strong>
       <ul>
-        <li>Provide a dynamic platform for sharing innovative research, emerging trends, and practical applications in AI, Big Data Analytics, and Smart Computing.</li>
-        <li>Empower emerging researchers and innovators—students, young researchers, and start-ups—to showcase their work, engage with experts, and gain mentorship and collaboration opportunities.</li>
+        <li>Share cutting-edge research and real-world solutions in AI, BDA, and Smart Computing</li>
+        <li>Empower emerging researchers and startups</li>
       </ul>
     </li>
-    <li><strong>Foster Collaboration:</strong> Encourage collaboration among researchers, industry experts, and academicians for interdisciplinary projects and knowledge sharing in AI, Big Data, and Smart Computing.</li>
-    <li><strong>Promote Sustainable Technological Solutions:</strong> Address how AI technologies can be leveraged for sustainable development—solving challenges such as climate change, public health, and economic inequality—while ensuring digital solutions are ethically responsible and socially inclusive.</li>
-    <li><strong>Address National Challenges through Technology:</strong> Bring global perspectives to discuss national challenges and opportunities using AI and Big Data for innovation, policy, and technological equity.</li>
+    <li><strong>Foster Collaboration:</strong> Encourage cross-domain research and industry partnerships</li>
+    <li><strong>Promote Sustainable Technological Solutions:</strong> Tackle global issues responsibly</li>
+    <li><strong>Address National Challenges:</strong> Use AI to shape inclusive policy and innovation</li>
   </ul>
+</section>
 
+<section>
   <h2>Expected Highlights</h2>
   <ul>
-    <li>Keynote presentations by renowned experts in computing and technology.</li>
-    <li>Paper presentations from contributors around the globe.</li>
-    <li>Panel discussions on the future of AI and innovation in various applications.</li>
-    <li>Networking opportunities with scholars and professionals.</li>
-    <li>Best Paper Awards for papers demonstrating significant innovation, originality, and research impact.</li>
+    <li>Keynotes by global AI leaders</li>
+    <li>Paper and poster presentations</li>
+    <li>Interactive panel discussions</li>
+    <li>Best Paper Awards and networking</li>
   </ul>
 </section>
 
 <footer>
-    &copy;  NCNTAIA-2025 | Department of CSE, SNIST | All Rights Reserved<br>
-    Dr. Mamatha talakoti, Convenor |NCNTABC-2025 | Contact: mamatha.t@sreenidhi.edu.in | phone:+91-9912667488
-  </footer>
+  &copy; NCNTAIA-2025 | Department of CSE, SNIST | All Rights Reserved<br>
+  Dr. Mamatha Talakoti, Convenor | Contact: mamatha.t@sreenidhi.edu.in | +91-9912667488
+</footer>
 
 </body>
 </html>
