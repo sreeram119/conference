@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home - NCNTAIA-2025</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#222; }
 
@@ -29,13 +31,12 @@
 
     /* HERO SECTION */
     .hero-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f5f5f5;
-  padding: 60px 20px;
-}
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5;
+      padding: 60px 20px;
+    }
 
     .hero-overlay {
       background: url('assets/image.png') center center no-repeat;
@@ -93,6 +94,59 @@
     footer {
       background:#2c2c2c; color:#fff; text-align:center;
       padding:15px; margin-top:40px;
+    }
+
+    /* RESPONSIVE FIXES */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .logo-container {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .hero-overlay {
+        padding: 30px 15px;
+      }
+
+      .hero-overlay h1 {
+        font-size: 1.75rem;
+      }
+
+      .hero-overlay p {
+        font-size: 1rem;
+      }
+
+      .floating-btn {
+        right: 10px;
+        bottom: 10px;
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+
+      #college-events .carousel-item img {
+        height: 30vh;
+      }
+
+      .container.text-center .col h2 {
+        font-size: 1.5rem;
+      }
+
+      .container.text-center .col p {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -162,16 +216,16 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="snist1.png" class="d-block w-100" alt="Event 1">
+          <img src="assets/snist1.png" class="d-block w-100" alt="Event 1">
         </div>
         <div class="carousel-item">
-          <img src="snist2.png" class="d-block w-100" alt="Event 2">
+          <img src="assets/snist2.png" class="d-block w-100" alt="Event 2">
         </div>
         <div class="carousel-item">
-          <img src="snist3.png" class="d-block w-100" alt="Event 3">
+          <img src="assets/snist3.png" class="d-block w-100" alt="Event 3">
         </div>
         <div class="carousel-item">
-          <img src="snist4.png" class="d-block w-100" alt="Event 4">
+          <img src="assets/snist4.png" class="d-block w-100" alt="Event 4">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#collegeCarousel" data-bs-slide="prev">
@@ -203,9 +257,11 @@
         dist > 0 ? `${d}d ${h}h ${m}m ${s}s` : "Event Started";
     }, 1000);
   </script>
+
+  <!-- FOOTER -->
   <footer>
-    &copy;  NCNTAIA-2025 | Department of CSE, SNIST | All Rights Reserved<br>
-    Dr. Mamatha talakoti, Convenor |NCNTABC-2025 | Contact: mamatha.t@sreenidhi.edu.in | phone:+91-9912667488
+    &copy; NCNTAIA-2025 | Department of CSE, SNIST | All Rights Reserved<br>
+    Dr. Mamatha Talakoti, Convenor | NCNTAIA-2025 | Contact: mamatha.t@sreenidhi.edu.in | Phone: +91-9912667488
   </footer>
 
 </body>
