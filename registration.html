@@ -60,34 +60,16 @@
       opacity: 0.65;
       cursor: not-allowed;
     }
-    /* Media Queries for Responsiveness */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .logo-container {
-        margin-bottom: 10px;
-      }
-      nav {
-        flex-direction: column;
-        gap: 8px;
-        margin-top: 10px;
-      }
-      .btn {
-        width: 100%;
-      }
-    }
   </style>
 </head>
 <body>
 
 <header>
   <div class="logo-container">
-    <img src="snist.png" alt="Sreenidhi Institute of Science and Technology Logo">
-    <img src="ieee.png" alt="IEEE Logo">
+    <img src="assets/snist.png" alt="Sreenidhi Institute of Science and Technology Logo">
+    <img src="assets/ieee.png" alt="IEEE Logo">
   </div>
-  <nav class="d-none d-md-flex">
+  <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="cfp.html">Call for Papers</a>
@@ -96,21 +78,6 @@
     <a href="dates.html">Important Dates</a>
     <a href="registration.html">Registration</a>
   </nav>
-  <!-- Mobile Navigation Toggle -->
-  <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse d-md-none" id="navbarNav">
-    <nav class="navbar-nav">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="about.html">About</a>
-      <a class="nav-link" href="cfp.html">Call for Papers</a>
-      <a class="nav-link" href="committee.html">Committee</a>
-      <a class="nav-link" href="speakers.html">Speakers</a>
-      <a class="nav-link" href="dates.html">Important Dates</a>
-      <a class="nav-link" href="registration.html">Registration</a>
-    </nav>
-  </div>
 </header>
 
 <section class="container my-5">
